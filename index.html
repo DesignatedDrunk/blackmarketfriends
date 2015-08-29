@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Black Market Friends</title>
+        <link href='http://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/export/data_champions.js"></script>
+        <script src="js/export/data_illigalitems.js"></script>
+        <script src="js/export/stats_brawlers.js"></script>
+        <script src="js/export/stats_champions.js"></script>
+        <script src="js/export/stats_illigalitems.js"></script>
+        <script src="js/export/stats_other.js"></script>
+    </head>
+    <body>
+        <form style="overflow:visible;">
+            <div class="body">
+                <div class="frametop">&nbsp;</div>
+                <div class="framebottom">&nbsp;</div>
+                <div class="frameback">&nbsp;</div>
+                <div class="extra">&nbsp;</div>
+                <div class="logo">&nbsp;</div>
+                <div class="heading">&nbsp;</div>
+                <div class="copyright">&copy; League of Legends, characters, images and all other copyrighted content related to League of Legends<br />are the property of Riot Games, Inc. All rights reserved.</div>
+                
+                <div class="riotbtn" style="position:absolute;left:-76px;top:80px;" ddhref="tab1">HOME</div>
+                <div class="riotbtn" style="position:absolute;left:-76px;top:180px;" ddhref="tab2">CHAMPIONS</div>
+                <div class="riotbtn" style="position:absolute;left:-76px;top:280px;" ddhref="tab3">FRIENDS</div>
+                <div class="riotbtn" style="position:absolute;left:-76px;top:380px;" ddhref="tab4">ITEMS</div>
+                <div class="riotbtn" style="position:absolute;left:-76px;top:480px;" ddhref="tab5">MORE</div>
+
+                <div id="tab1" class="tab">
+                    <h2>Welcome to Bilgewater!</h2>
+                    <p>
+                        "Black Market Brawlers" was a temporary gamemode available during the event "Bilgewater: Burning Tides".<br/>
+                        This gamemode took place on Summoner's Rift and came with its own set of additional item which were available for purchase from the Black Market.
+                    </p>
+                    <p>
+                        While these items were fun on its own this gamemode also enabled something far better.<br/>
+                        <b>Brawlers!</b>, thats right you had the option to purchase these little friends to help you fight everyone that wasnt your friend!
+                    </p>
+                    <p>
+                        While the event might be over now these brawlers still have a place in everyones hart, which raises the question?<br/>
+                        <b>"What Brawler reigns supreme?"</b>
+                    </p>
+                    <a class="riotbtn" href="http://euw.leagueoflegends.com/en/site/bilgewater" target="_blank" style="float:right;">FULL STORY</a>
+                    <div class="quote" style="margin-top:200px;">" In Bilgewater, anything can be bought. In the aftermath of the destruction of the Dead Pool, Gangplank’s spoils-filled warehouses have been plundered, and those who followed the dread pirate have forfeited their allegiance. "</div>
+                </div>
+                <div id="tab2" class="tab hidden">
+                    <h2>Champions</h2>
+                    <table class="table table-bordered" ddvar="championstats" ddorder="name,rate1_clean,rate2_clean,rate3_clean,rate4_clean">
+                        <thead>
+                            <tr>
+                                <td ddvar="name">Champion<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate1" class="sorted desc">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate2">Pickrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate3">Banrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate4">KDA<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="tab3" class="tab hidden">
+                    <h2>Friends</h2>
+                    <table class="table table-bordered" ddvar="brawlerstats" ddorder="name,rate1_clean,rate2_clean,rate3_clean">
+                        <thead>
+                            <tr>
+                                <td ddvar="name">Brawler<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate1" class="sorted desc">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate2">Pickrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate3">Banrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="tab4" class="tab hidden">
+                    <h2>Black Market Items</h2>
+                    <b>Did you know?</b> 
+                    &nbsp;Only <b ddvar="tmp1">???</b> of players bought Black Market Items,<br/>but players that did had a winrate of <b ddvar="tmp2">???</b>
+                    <br/><br/>
+                    <table class="table table-bordered" ddvar="itemstats" ddorder="name,rate1_clean,rate2_clean">
+                        <thead>
+                            <tr>
+                                <td ddvar="name">Item<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate1" class="sorted desc">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate2">Pickrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="tab5" class="tab hidden">
+                    <h2>More Stats!</h2>
+                    <table class="table table-bordered" ddvar="otherstats" ddorder="name,rate1_clean,rate2_clean">
+                        <thead>
+                            <tr>
+                                <td ddvar="name">Stat<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate1" class="sorted desc">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                                <td ddvar="rate2" class="sorted desc">Playrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="popup">
+                <div style="position:relative;left:0px;top:0px;width:100%;height:100%">
+                    <div onclick="$('.popup').removeClass('open');" style="position:absolute;left:0px;top:0px;width:100%;height:100%;cursor:pointer;">&nbsp;</div>
+                    <div class="popupback">&nbsp;</div>
+                    <div class="popupside">&nbsp;</div>
+                    <div class="popuptop">&nbsp;</div>
+                    <div class="popupbottom">&nbsp;</div>
+                    <div class="popupbody"></div>
+                </div>
+            </div>
+        </form>
+        
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var championstats = [];
+            var brawlerstats = [];
+            var itemstats = [];
+            var otherstats = [];
+
+            $(document).ready(function () {
+                for (var i = 0; i < stats_champions.length; i++) {
+                    var _stats = stats_champions[i];
+                    var main = data_champions[_stats["id"]];
+                    championstats.push({
+                        clickid: _stats["id"],
+                        icon: main["image"],
+                        id: _stats["id"],
+                        name: main["name"],
+                        rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                        rate2_clean: Math.round(_stats["pickrate"] * 10) / 10.0 + "%",
+                        rate3_clean: Math.round(_stats["banrate"] * 10) / 10.0 + "%",
+                        rate4_clean: Math.round(_stats["kda"] * 10) / 10.0,
+                        rate1: _stats["winrate"],
+                        rate2: _stats["pickrate"],
+                        rate3: _stats["banrate"],
+                        rate4: _stats["kda"]
+                    });
+                }
+                for (var i = 0; i < stats_brawlers.length; i++) {
+                    var _stats = stats_brawlers[i];
+                    var main = data_illigalitems[_stats["id"]];
+                    brawlerstats.push({
+                        clickid: _stats["id"],
+                        icon: main["image"],
+                        id: _stats["id"],
+                        name: main["name"],
+                        rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                        rate2_clean: Math.round(_stats["pickrate"] * 10) / 10.0 + "%",
+                        rate3_clean: "Please don't ban me",
+                        rate1: _stats["winrate"],
+                        rate2: _stats["pickrate"],
+                        rate3: 0
+                    });
+                }
+                for (var i = 0; i < stats_illigalitems.length; i++) {
+                    var _stats = stats_illigalitems[i];
+                    var main = data_illigalitems[_stats["id"]];
+                    itemstats.push({
+                        clickid: _stats["id"],
+                        icon: main["image"],
+                        id: _stats["id"],
+                        name: main["name"],
+                        rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                        rate2_clean: Math.round(_stats["pickrate"] * 10) / 10.0 + "%",
+                        rate1: _stats["winrate"],
+                        rate2: _stats["pickrate"]
+                    });
+                }
+                for (var i = 0; i < stats_other.length; i++) {
+                    var _stats = stats_other[i];
+
+                    var _name = "";
+                    var rate2 = "-";
+                    if (_stats["id"] == "FIRSTINHIBITOR") _name = "First Inhibitor";
+                    else if (_stats["id"] == "FIFTHDRAGON") _name = "Fifth Dragon";
+                    else if (_stats["id"] == "FIRSTBARON") _name = "First Baron";
+                    else if (_stats["id"] == "FIRSTDRAGON") _name = "First Dragon";
+                    else if (_stats["id"] == "FIRSTTOWER") _name = "First Tower";
+                    else if (_stats["id"] == "FIRSTBLOOD") _name = "First Blood";
+                    else if (_stats["id"] == "USEBLACKMARKET") {
+                        _name = "Using Black Market Items";
+                        rate2 = Math.round(_stats["pickrate"] * 10) / 10.0 + "%";
+
+                        $("[ddvar='tmp1']").html(Math.round(_stats["pickrate"] * 10) / 10.0 + "%");
+                        $("[ddvar='tmp2']").html(Math.round(_stats["winrate"] * 10) / 10.0 + "%");
+                    }
+                    if (_name.length > 0) {
+                        otherstats.push({
+                            id: _stats["id"],
+                            name: _name,
+                            rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                            rate2_clean: rate2,
+                            rate1: _stats["winrate"],
+                            rate2: 0
+                        });
+                    }
+                }
+
+                $("[ddhref]").click(function () {
+                    $(".tab").addClass("hidden");
+                    $("#" + $(this).attr("ddhref")).removeClass("hidden");
+                });
+                rebindsort();
+                $("table[ddvar]").each(function () { updatetable($(this).attr("ddvar")); });
+            });
+
+            function rebindsort() {
+                $(".table-bordered").find("thead").find("td[ddvar]").unbind("click").bind("click",function () {
+                    if ($(this).hasClass("sorted")) {
+                        if ($(this).hasClass("asc")) {
+                            $(this).removeClass("asc").addClass("desc");
+                        }
+                        else {
+                            $(this).removeClass("desc").addClass("asc");
+                        }
+                    }
+                    else {
+                        $(this).parent().find(".sorted").removeClass("sorted").removeClass("asc").removeClass("desc");
+                        $(this).addClass("sorted").addClass("desc");
+                    }
+                    updatetable($(this).parents("table[ddvar]").attr("ddvar"));
+                });
+            }
+
+            var maintablesubarr = null;
+            var maintablesubarr2 = null;
+            function updatetable(varname) {
+                $("table[ddvar='" + varname + "']").each(function () {
+                    var ihtml = "";
+                    $(this).find("tbody").html("");
+
+                    var _order = $(this).attr("ddorder").split(",");
+                    var arr = window[varname];
+                    arr.sort(by($(this).find(".sorted").attr("ddvar")));
+                    if ($(this).find(".sorted").hasClass("desc")) arr.reverse();
+
+                    for (var i = 0; i < arr.length; i++) {
+                        ihtml += "<tr>";
+                        for (var j = 0; j < _order.length; j++) {
+                            var _style = "";
+                            if (j == 0 && arr[i]["icon"]) {
+                                _style = "background-image:url(\"" + arr[i]["icon"] + "\");background-repeat:no-repeat;background-size: auto 100%;background-position:left center;padding-left:38px;";
+                            }
+                            ihtml += "<td " + (j == 0 && arr[i]["clickid"] ? "clickid='" + arr[i]["clickid"] + "'" : "") + " style='" + _style + "'>" + arr[i][_order[j]] + "</td>";
+                        }
+                        ihtml += "</tr>";
+                    }
+                    $(this).find("tbody").html(ihtml);
+
+                    $(this).find("[clickid]").click(function () {
+                        maintablesubarr = null;
+                        maintablesubarr2 = null;
+
+                        var id = $(this).attr("clickid");
+                        var d = null;
+                        var dstats = null;
+                        var ischampion = false;
+
+                        var subarr = [];
+                        var subarrtop = 4;
+                        var subarrtitle = "";
+                        var subarrsubtitle = "";
+
+                        var subarr2 = [];
+                        var subarrtitle2 = "";
+                        var subarrsubtitle2 = "";
+
+                        var subarr3 = [];
+                        var subarrtitle3 = "";
+                        var subarrsubtitle3 = "";
+
+                        if (id.indexOf("champion") == 0) {
+                            ischampion = true;
+                            d = data_champions[id];
+                            for (var i = 0; i < stats_champions.length; i++) {
+                                if (stats_champions[i]["id"] == id) dstats = stats_champions[i];
+                            }
+
+                            subarrtitle = 'Brawlers';
+                            for (var i = 0; i < dstats["substats"].length; i++) {
+                                var ss = dstats["substats"][i];
+                                if (ss["id"] == dstats["id"] + "_item3611" || ss["id"] == dstats["id"] + "_item3612" ||
+                                    ss["id"] == dstats["id"] + "_item3613" || ss["id"] == dstats["id"] + "_item3614") {
+                                    subarr.push(ss);
+                                }
+                            }
+
+                            subarrtitle2 = 'Black Market Items';
+                            for (var i = 0; i < dstats["substats"].length; i++) {
+                                var ss = dstats["substats"][i];
+                                if (ss["id"].indexOf("_item") >= 0 && !(ss["id"] == dstats["id"] + "_item3611" || ss["id"] == dstats["id"] + "_item3612" ||
+                                    ss["id"] == dstats["id"] + "_item3613" || ss["id"] == dstats["id"] + "_item3614") && ss["pickrate_positive"] > 10) {
+                                    subarr2.push(ss);
+                                }
+                            }
+                            
+                        }
+                        else {
+                            var isbrawler = false;
+                            d = data_illigalitems[id];
+                            for (var i = 0; i < stats_illigalitems.length; i++) {
+                                if (stats_illigalitems[i]["id"] == id) dstats = stats_illigalitems[i];
+                            }
+                            for (var i = 0; i < stats_brawlers.length; i++) {
+                                if (stats_brawlers[i]["id"] == id) {
+                                    dstats = stats_brawlers[i];
+                                    isbrawler = true;
+                                }
+                            }
+
+                            if (isbrawler) {
+                                subarrtop = 3;
+                                subarrtitle = 'Champions';
+                                subarrtitle3 = 'Champions';
+                                for (var i = 0; i < dstats["substats"].length; i++) {
+                                    var ss = dstats["substats"][i];
+                                    if (ss["id"].indexOf("_champion") >= 0) {
+                                        subarr.push(ss);
+                                        subarr3.push(ss);
+                                    }
+                                }
+
+                                subarrtitle2 = 'Upgrades';
+                                for (var i = 0; i < dstats["substats"].length; i++) {
+                                    var ss = dstats["substats"][i];
+                                    if (ss["id"].indexOf("_item") >= 0) {
+                                        subarr2.push(ss);
+                                    }
+                                }
+                            }
+                            else {
+                                subarrtop = 3;
+                                subarrtitle = 'Champions';
+                                subarrtitle3 = 'Champions';
+                                for (var i = 0; i < dstats["substats"].length; i++) {
+                                    var ss = dstats["substats"][i];
+                                    if (ss["id"].indexOf("_champion") >= 0) {
+                                        subarr.push(ss);
+                                        subarr3.push(ss);
+                                    }
+                                }
+                            }
+                        }
+
+                        if (subarr.length > 0) {
+                            subarr.sort(by("pickrate"));
+                            subarr.reverse();
+                        }
+                        if (subarr2.length > 0) {
+                            subarr2.sort(by("pickrate"));
+                            subarr2.reverse();
+                        }
+                        
+                        var ihtml = "";
+                        ihtml += '<div style="float:left;width:180px;">';
+                        ihtml += '<div class="portrait" style=\'background-image:url("' + d["image"] + '");\'>';
+                        ihtml += '<div><div class="portraitname">' + d["name"] + '</div></div></div><br/>';
+                        ihtml += '<div class="ddProgress" ddvalue="' + Math.ceil(dstats["winrate"]) + '" ddtitle="Winrate" ddtype="success"></div>';
+                        ihtml += '<div class="ddProgress" ddvalue="' + Math.ceil(dstats["pickrate"]) + '" ddtitle="Pickrate" ddtype="warning"></div>';
+                        ihtml += '<div class="ddProgress" ddvalue="' + Math.ceil(dstats["banrate"]) + '" ddtitle="Banrate" ddtype="danger"></div>';
+                        ihtml += '</div>';
+                        ihtml += '<div style="float:right;width:652px;margin-top:-40px;padding-top:40px;"><div class="information">';
+                        ihtml += '<div class="informationname">' + d["name"] + '</div>';
+                        if(d["title"] ) ihtml += '<div class="informationsubname"><i>' + d["title"] + '</i></div>';
+
+
+                        if (subarr.length > 0) {
+                            ihtml += '<div class="information" style="float:right;margin-top:0px;margin-bottom:44px;"><div class="informationname" style="text-align:center;margin-bottom:4px;">' + subarrtitle + '</div>';
+                            if (subarrsubtitle.length > 0) ihtml += '<div class="informationshortdescription">' + subarrsubtitle + '</div>';
+                            for (var i = 0; i < subarr.length && i < subarrtop; i++) {
+                                if(ischampion) {
+                                    ihtml += '<div style="float:left;width:' + (100 / subarrtop) + '%;padding-left:8px;"><div class="portrait small" style=\'background-image:url("' + data_illigalitems[subarr[i]["id"].substr(dstats["id"].length + 1)]["image"] + '")\'>';
+                                    ihtml += '<div><div class="portraitname">' + data_illigalitems[subarr[i]["id"].substr(dstats["id"].length + 1)]["name"] + '</div>';
+                                    ihtml += '<div class="portraitbottom">winrate: <b>' + (Math.round(subarr[i]["winrate"] * 10) / 10) + '%</b><br/>pickrate: <b>' + (Math.round(subarr[i]["pickrate"] * 10) / 10) + '%</b></div>';
+                                    ihtml += '</div></div></div>';
+                                }
+                                else {
+                                    ihtml += '<div style="float:left;width:' + (100 / subarrtop) + '%;padding-left:8px;"><div class="portrait small" style=\'background-image:url("' + data_champions[subarr[i]["id"].substr(dstats["id"].length + 1)]["image"] + '")\'>';
+                                    ihtml += '<div><div class="portraitname">' + data_champions[subarr[i]["id"].substr(dstats["id"].length + 1)]["name"] + '</div>';
+                                    ihtml += '<div class="portraitbottom">winrate: <b>' + (Math.round(subarr[i]["winrate"] * 10) / 10) + '%</b><br/>pickrate: <b>' + (Math.round(subarr[i]["pickrate"] * 10) / 10) + '%</b></div>';
+                                    ihtml += '</div></div></div>';
+                                }
+                            }
+                            ihtml += '</div>';
+                        }
+
+                        if (subarr2.length > 0) {
+                            maintablesubarr = [];
+                            for (var i = 0; i < subarr2.length; i++) {
+                                var _stats = subarr2[i];
+                                var main = data_illigalitems[_stats["id"].substr(_stats["id"].indexOf("_") + 1)];
+                                maintablesubarr.push({
+                                    icon: main["image"],
+                                    id: _stats["id"],
+                                    name: main["name"],
+                                    rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                                    rate2_clean: Math.round(_stats["pickrate"] * 10) / 10.0 + "% (" + _stats["pickrate_positive"] + ")",
+                                    rate1: _stats["winrate"],
+                                    rate2: _stats["pickrate"]
+                                });
+                            }
+
+                            ihtml += '<table class="table table-bordered" ddvar="maintablesubarr" ddorder="name,rate1_clean,rate2_clean" style="margin-top:12px;width:50%;float:right;">';
+                            ihtml += '<thead><tr>';
+                            ihtml += '<td ddvar="name">Item ( > 10 picks )<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '<td ddvar="rate1">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '<td ddvar="rate2" class="sorted desc">Pickrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '</tr></thead><tbody></tbody></table>';
+                        }
+
+
+                        ihtml += '<div class="informationdescription">' + replaceAll("#FDD017", "#EE0055", replaceAll("#EE0055", "#EE0055", replaceAll("\u0026gt;", ">", replaceAll("\u0026lt;", "<", (d["lore"] ? d["lore"] : d["description"]))))) + '</div>';
+
+
+                        if (subarr3.length > 0) {
+                            maintablesubarr2 = [];
+                            for (var i = 0; i < subarr3.length; i++) {
+                                var _stats = subarr3[i];
+                                var main = data_champions[_stats["id"].substr(_stats["id"].indexOf("_") + 1)];
+                                maintablesubarr2.push({
+                                    icon: main["image"],
+                                    id: _stats["id"],
+                                    name: main["name"],
+                                    rate1_clean: Math.round(_stats["winrate"] * 10) / 10.0 + "%",
+                                    rate2_clean: Math.round(_stats["pickrate"] * 10) / 10.0 + "% (" + _stats["pickrate_positive"] + ")",
+                                    rate1: _stats["winrate"],
+                                    rate2: _stats["pickrate"]
+                                });
+                            }
+
+                            ihtml += '<table class="table table-bordered" ddvar="maintablesubarr2" ddorder="name,rate1_clean,rate2_clean" style="margin-top:12px;width:50%;float:right;">';
+                            ihtml += '<thead><tr>';
+                            ihtml += '<td ddvar="name">Champion<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '<td ddvar="rate1">Winrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '<td ddvar="rate2" class="sorted desc">Pickrate<span class="glyphicon glyphicon-chevron-down">&nbsp;</span><span class="glyphicon glyphicon-chevron-up">&nbsp;</span></td>';
+                            ihtml += '</tr></thead><tbody></tbody></table>';
+                        }
+
+                        ihtml += '</div>';
+                        ihtml += '</div><div style="clear:both;"></div>';
+
+                        $(".popupbody").html(ihtml);
+                        if (subarr2.length > 0) { updatetable("maintablesubarr"); }
+                        if (subarr3.length > 0) { updatetable("maintablesubarr2"); }
+                        rebindsort();
+                        $(".popup").addClass("open");
+                        $(".ddProgress").not(".handled").each(function () {
+                            var ttl = $(this).attr("ddtitle");
+                            var val = parseInt($(this).attr("ddvalue"));
+
+                            var ihtml = "";
+                            if (ttl && ttl.length > 0) {
+                                ihtml += "<div class='ddProgressname'>" + ttl + " (" + val + "%)</div>";
+                            }
+                            ihtml += "<div class='progress'><div class='progress-bar progress-bar-" + $(this).attr("ddtype") + " progress-bar-striped active' style='width:" + val + "%'>&nbsp;</div></div>";
+
+                            $(this).html(ihtml).addClass("handled");
+                        });
+                    });
+                });
+            }
+            function replaceAll(find, replace, str) {
+                return str.replace(new RegExp(find, 'g'), replace);
+            }
+            var by = function (name, minor) {
+                return function (o, p) {
+                    var a, b;
+                    if (typeof o === 'object' && typeof p === 'object' && o && p) {
+                        a = o[name];
+                        b = p[name];
+                        if (a === b) {
+                            return typeof minor === 'function' ? minor(o, p) : o;
+                        }
+                        if (typeof a === typeof b) {
+                            return a < b ? -1 : 1;
+                        }
+                        return typeof a < typeof b ? -1 : 1;
+                    } else {
+                        throw {
+                            name: 'Error',
+                            message: 'Expected an object when sorting by ' + name
+                        };
+                    }
+                }
+            };
+        </script>
+    </body>
+</html>

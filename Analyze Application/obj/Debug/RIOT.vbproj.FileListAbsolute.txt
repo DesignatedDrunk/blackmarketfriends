@@ -1,0 +1,19 @@
+D:\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.exe
+D:\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.pdb
+D:\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.xml
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.Form1.resources
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.Resources.resources
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.vbproj.GenerateResource.Cache
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.exe
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.xml
+D:\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.pdb
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.exe
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.xml
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.pdb
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.exe
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.pdb
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\bin\Debug\RIOT.xml
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.Form1.resources
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.Resources.resources
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.vbproj.GenerateResource.Cache
+D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\obj\Debug\RIOT.vbprojResolveAssemblyReference.cache

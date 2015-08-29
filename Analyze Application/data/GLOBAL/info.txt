@@ -1,0 +1,61 @@
+...
+    - participants ARRAY
+    - participantIdentities ARRAY
+    - teams ARRAY
+    - timeline DICTIONARY
+          - frameInterval INT
+          - frames ARRAY
+                - participantFrames DICTIONARY
+                - events ARRAY
+                      + eventType (SKILL_LEVEL_UP | ITEM_PURCHASED | ITEM_UNDO | WARD_PLACED | ITEM_DESTROYED | CHAMPION_KILL | ELITE_MONSTER_KILL)
+                      + itemId / timestamp / participantId / skillSlot / itemBefore / itemAfter / creatorId / killerId / victimId
+                      + levelUpType (NORMAL)
+                      + wardType (YELLOW_TRINKET)
+                      + position (x / y)
+                      + monsterType (DRAGON)
+                      + assistingParticipantIds ARRAY
+
+3611 (Razorfin) 	 30928	 32.2%
+3612 (Ironback)		 30422	 31.6%
+3613 (Plundercrab)	 22843	 23.8%
+3614 (Ocklepod)		 11936	 12.4%
+					 96129	100.0% (96.1% of games)
+					100000	
+
+3615 (Mercenary Upgrade 1)
+3616 (Mercenary Upgrade 2)
+3617 (Mercenary Upgrade 3)
+
+3621 (Offense Upgrade 1)
+3622 (Offense Upgrade 2)
+3623 (Offense Upgrade 3)
+
+3624 (Defense Upgrade 1)
+3625 (Defense Upgrade 2)
+3626 (Defense Upgrade 3)
+
+BootsTeleport
+3245
+1341
+1340
+1339
+1335
+1336
+1337
+1338
+
+3924 (Flesheater (Melee Only))
+3911 (Martyr's Gambit)
+3742 (Dead Man's Plate)
+3745 (Puppeteer)
+3744 (Staff of Flowing Water)
+3844 (Murksphere)
+3841 (Swindler's Orb)
+3840 (Globe of Trust)
+3829 (Trickster's Glass)
+3150 (Mirage Blade)
+3430 (Rite of Ruin)
+3431 (Netherstride Grimoire)
+3434 (Pox Arcana)
+3433 (Lost Chapter)
+3652 (Typhoon Claws)
