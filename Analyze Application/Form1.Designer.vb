@@ -42,13 +42,13 @@ Partial Class Form1
         Me.tbDir = New System.Windows.Forms.TextBox()
         Me.backgroundbrawlers = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.tbItemsFile = New System.Windows.Forms.TextBox()
-        Me.tbChampionsFile = New System.Windows.Forms.TextBox()
-        Me.tbExportDir2 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbExportDir2 = New System.Windows.Forms.TextBox()
+        Me.tbChampionsFile = New System.Windows.Forms.TextBox()
+        Me.tbItemsFile = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -140,7 +140,6 @@ Partial Class Form1
         Me.tbAPIKEY.Name = "tbAPIKEY"
         Me.tbAPIKEY.Size = New System.Drawing.Size(213, 20)
         Me.tbAPIKEY.TabIndex = 1
-        Me.tbAPIKEY.Text = "902d3f91-f1ad-475b-96c7-766f73ea5f57"
         '
         'btnStartImport
         '
@@ -259,51 +258,14 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Export Data"
         '
-        'Button1
+        'Label7
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(159, 97)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Export"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'tbItemsFile
-        '
-        Me.tbItemsFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbItemsFile.Location = New System.Drawing.Point(94, 19)
-        Me.tbItemsFile.Name = "tbItemsFile"
-        Me.tbItemsFile.Size = New System.Drawing.Size(217, 20)
-        Me.tbItemsFile.TabIndex = 13
-        Me.tbItemsFile.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\GLOBAL\item.json"
-        '
-        'tbChampionsFile
-        '
-        Me.tbChampionsFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbChampionsFile.Location = New System.Drawing.Point(94, 45)
-        Me.tbChampionsFile.Name = "tbChampionsFile"
-        Me.tbChampionsFile.Size = New System.Drawing.Size(217, 20)
-        Me.tbChampionsFile.TabIndex = 14
-        Me.tbChampionsFile.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\GLOBAL\champion.json"
-        '
-        'tbExportDir2
-        '
-        Me.tbExportDir2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbExportDir2.Location = New System.Drawing.Point(94, 71)
-        Me.tbExportDir2.Name = "tbExportDir2"
-        Me.tbExportDir2.Size = New System.Drawing.Size(217, 20)
-        Me.tbExportDir2.TabIndex = 15
-        Me.tbExportDir2.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\EXPORT"
-        '
-        'Label5
-        '
-        Me.Label5.Location = New System.Drawing.Point(6, 19)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 20)
-        Me.Label5.TabIndex = 16
-        Me.Label5.Text = "Items File"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label7.Location = New System.Drawing.Point(6, 70)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(82, 20)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Export Dir"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label6
         '
@@ -314,14 +276,51 @@ Partial Class Form1
         Me.Label6.Text = "Champions File"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label7
+        'Label5
         '
-        Me.Label7.Location = New System.Drawing.Point(6, 70)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 20)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "Export Dir"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label5.Location = New System.Drawing.Point(6, 19)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(82, 20)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "Items File"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'tbExportDir2
+        '
+        Me.tbExportDir2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tbExportDir2.Location = New System.Drawing.Point(94, 71)
+        Me.tbExportDir2.Name = "tbExportDir2"
+        Me.tbExportDir2.Size = New System.Drawing.Size(217, 20)
+        Me.tbExportDir2.TabIndex = 15
+        Me.tbExportDir2.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\EXPORT"
+        '
+        'tbChampionsFile
+        '
+        Me.tbChampionsFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tbChampionsFile.Location = New System.Drawing.Point(94, 45)
+        Me.tbChampionsFile.Name = "tbChampionsFile"
+        Me.tbChampionsFile.Size = New System.Drawing.Size(217, 20)
+        Me.tbChampionsFile.TabIndex = 14
+        Me.tbChampionsFile.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\GLOBAL\champion.json"
+        '
+        'tbItemsFile
+        '
+        Me.tbItemsFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tbItemsFile.Location = New System.Drawing.Point(94, 19)
+        Me.tbItemsFile.Name = "tbItemsFile"
+        Me.tbItemsFile.Size = New System.Drawing.Size(217, 20)
+        Me.tbItemsFile.TabIndex = 13
+        Me.tbItemsFile.Text = "D:\Installed x64\inetpub\wwwroot\RIOT\RIOT\data\BILGEWATER\GLOBAL\item.json"
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(159, 97)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(152, 23)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Export"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
